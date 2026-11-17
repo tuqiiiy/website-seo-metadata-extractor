@@ -1,0 +1,26 @@
+{
+  "title": "Website SEO Extractor Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "URLs to Analyze",
+      "type": "array",
+      "description": "List of web page URLs to inspect and extract SEO metadata from.",
+      "editor": "globs",
+      "prefill": [
+        "https://github.com",
+        "https://stripe.com"
+      ]
+    },
+    "maxConcurrency": {
+      "title": "Max Concurrency",
+      "type": "integer",
+      "description": "Number of pages to inspect in parallel.",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 50
+    }
+  },
+  "required": ["startUrls"]
+}
