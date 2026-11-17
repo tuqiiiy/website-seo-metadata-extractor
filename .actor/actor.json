@@ -1,64 +1,64 @@
-﻿{
-    "actorSpecification":  1,
-    "name":  "website-seo-metadata-extractor",
-    "title":  "Website SEO \u0026 OpenGraph Metadata Extractor",
-    "description":  "Extract full SEO and social share metadata from any web page: Title, Meta Description, Keywords, Canonical URL, OpenGraph (og:title, og:image, og:description), Twitter Cards, and Favicons.",
-    "version":  "1.0",
-    "meta":  {
-                 "templateId":  "project_empty"
-             },
-    "dockerfile":  "./Dockerfile",
-    "categories":  [
-                       "DEVELOPER_TOOLS",
-                       "MARKETING"
-                   ],
-    "storages":  {
-                     "dataset":  {
-                                     "actorSpecification":  1,
-                                     "title":  "Website SEO Metadata Dataset",
-                                     "views":  {
-                                                   "overview":  {
-                                                                    "title":  "Overview",
-                                                                    "transformation":  {
-                                                                                           "fields":  [
-                                                                                                          "url",
-                                                                                                          "statusCode",
-                                                                                                          "title",
-                                                                                                          "description",
-                                                                                                          "ogTitle",
-                                                                                                          "ogImage",
-                                                                                                          "canonicalUrl"
-                                                                                                      ]
-                                                                                       },
-                                                                    "display":  {
-                                                                                    "component":  "table",
-                                                                                    "columns":  {
-                                                                                                    "url":  {
-                                                                                                                "label":  "Web Page URL"
-                                                                                                            },
-                                                                                                    "statusCode":  {
-                                                                                                                       "label":  "HTTP Status"
-                                                                                                                   },
-                                                                                                    "title":  {
-                                                                                                                  "label":  "Page Title"
-                                                                                                              },
-                                                                                                    "description":  {
-                                                                                                                        "label":  "Meta Description"
-                                                                                                                    },
-                                                                                                    "ogTitle":  {
-                                                                                                                    "label":  "OpenGraph Title"
-                                                                                                                },
-                                                                                                    "ogImage":  {
-                                                                                                                    "label":  "OpenGraph Image"
-                                                                                                                },
-                                                                                                    "canonicalUrl":  {
-                                                                                                                         "label":  "Canonical URL"
-                                                                                                                     }
-                                                                                                }
-                                                                                }
-                                                                }
-                                               }
-                                 }
-                 },
-    "output":  "./output_schema.json"
+{
+  "actorSpecification": 1,
+  "name": "website-seo-metadata-extractor",
+  "title": "Website SEO & OpenGraph Metadata Extractor",
+  "description": "Extract full SEO and social share metadata from any web page: Title, Meta Description, Keywords, Canonical URL, OpenGraph (og:title, og:image, og:description), Twitter Cards, and Favicons.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "project_empty"
+  },
+  "dockerfile": "./Dockerfile",
+  "categories": [
+    "DEVELOPER_TOOLS",
+    "MARKETING"
+  ],
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Website SEO Metadata Dataset",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "url",
+              "statusCode",
+              "title",
+              "description",
+              "ogTitle",
+              "ogImage",
+              "canonicalUrl"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "columns": {
+              "url": {
+                "label": "Web Page URL"
+              },
+              "statusCode": {
+                "label": "HTTP Status"
+              },
+              "title": {
+                "label": "Page Title"
+              },
+              "description": {
+                "label": "Meta Description"
+              },
+              "ogTitle": {
+                "label": "OpenGraph Title"
+              },
+              "ogImage": {
+                "label": "OpenGraph Image"
+              },
+              "canonicalUrl": {
+                "label": "Canonical URL"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "output": "./output_schema.json"
 }

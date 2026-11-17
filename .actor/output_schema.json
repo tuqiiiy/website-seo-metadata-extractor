@@ -1,4 +1,4 @@
-﻿{
+{
   "actorOutputSchemaVersion": 1,
   "title": "Actor Output",
   "description": "Structured dataset items produced by the actor run.",
