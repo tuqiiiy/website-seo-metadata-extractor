@@ -1,0 +1,12 @@
+﻿{
+  "actorOutputSchemaVersion": 1,
+  "title": "Actor Output",
+  "description": "Structured dataset items produced by the actor run.",
+  "properties": {
+    "overview": {
+      "type": "string",
+      "title": "Overview",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}
